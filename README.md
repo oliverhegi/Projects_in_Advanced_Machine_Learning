@@ -1,7 +1,7 @@
 # Projects in Advanced Machine Learning
 
 ## What’s included:
-*	[`Happiness.ipynb`](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Projects/World_Happiness_Prediction.ipynb): Predicting happiness with the UN World Happiness Data using Deep Learning and classic ML techniques
+*	[`World_Happiness_Prediction.ipynb`](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Projects/World_Happiness_Prediction.ipynb): Predicting happiness with the UN World Happiness Data using Deep Learning and classic ML techniques
 *	[`Covid_X-Rays.ipynb`](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Projects/COVID_X-Rays.ipynb): Identifying Covid-19 infections in X-Ray data using Transfer Learning and Fire Modules
 *	[`Sentiment_Analysis_with_SST.ipynb`](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Projects/SST_Text_Classification.ipynb): Conducting sentiment analysis with LSTM and embeddings layers
 
@@ -11,7 +11,11 @@ These projects were all completed as part of a course on Advanced Machine Learni
 
 ### [Project 1 – World Happiness Prediction](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Projects/World_Happiness_Prediction.ipynb):
 
+![PCA1](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Images/PCA1.png)
+
 This project uses data from the [U.N. World Happiness Report]( https://worldhappiness.report/ed/2022/) to predict the self-reported happiness of a country. The data is first analyzed and preprocessed using a Principle Component Analysis (PCA). Several regression tree models, such as Random Forest and Gradient Boosting Machines (GBM) are fitted and used to make predictions. Next a neural network is trained, and the results are analyzed using SHAP values.
+
+![PCA2](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Images/PCA2.png)
 
 The chart above shows predictor SHAP values for all countries, ordered by the output value (happiest to the left and least happy to the right). This chart shows that there is diversity in feature importance and not every output can be predicted with the same features.
 
@@ -20,6 +24,8 @@ Key takeaways:
 2.	The analysis of the SHAP values has shown that the relative feature-importance varies dramatically between observations. The happiness of some countries can be predicted with just GDP per capita and social support. Other countries require a combination of other predictors. This, along with a relatively low overall F1 Score / accuracy suggests that (self-reported) happiness is quite challenging to predict, even with a pannel of predictors.
 
 ### [Project 2 – COVID X-Rays](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Projects/COVID_X-Rays.ipynb):
+
+![InceptionV3](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Images/InceptionV3.png)
 
 This project uses Deep Learning models to classify X-ray images from healthy patients, patients with COVID-19, and patients with pneumonia. Several different Convolutional Neural Networks (CNNs) are used, with varying degrees of complexity. [Fire modules]( https://paperswithcode.com/method/fire-module) are applied to squeeze convolutional layers and subsequently expand them. Transfer Learning with a [Keras/ImageNet](https://keras.io/api/applications/inceptionv3/) model called InceptionV3 is used to import a pretrained image classification model.
 
@@ -35,6 +41,8 @@ image_gen = ImageDataGenerator(
                     zoom_range=0.5
                     )
 ```
+
+![Data_Augmentation](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Images/Data_Augmentation.png)
 
 Data augmentation is used when training the models to avoid overfitting.
 
