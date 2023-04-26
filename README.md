@@ -1,7 +1,5 @@
 # Projects in Advanced Machine Learning
 
-Includes various applications of Machine Learning.
-
 ## What’s included:
 *	[`Happiness.ipynb`](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Projects/World_Happiness_Prediction.ipynb): Predicting happiness with the UN World Happiness Data using Deep Learning and classic ML techniques
 *	[`Covid_X-Rays.ipynb`](https://github.com/oliverhegi/Projects_in_Advanced_Machine_Learning/blob/main/Projects/COVID_X-Rays.ipynb): Identifying Covid-19 infections in X-Ray data using Transfer Learning and Fire Modules
